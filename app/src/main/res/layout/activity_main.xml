@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F1F1"
+    android:clipToPadding="false"
+    tools:context=".ActivityUser.Fragment.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@color/textColorButtonWhite"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp">
+
+        <me.ibrahimsn.lib.SmoothBottomBar
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:elevation="30dp"
+            app:menu="@menu/menu_user_home"
+            app:backgroundColor="#53E88B"
+            tools:ignore="MissingConstraints" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

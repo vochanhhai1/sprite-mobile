@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".Admin.Fragment.QuanLySanPham.AddSanPham">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_login_background"
+            tools:ignore="ContentDescription" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/upbackBtn"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/back_button">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_back"
+                        tools:ignore="ContentDescription" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/headerTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btnDelete"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:backgroundTint="#FB6868"
+                    app:cardCornerRadius="12dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center|end"
+                        android:layout_marginEnd="14dp"
+                        android:src="@drawable/ic_trash"
+                        tools:ignore="ContentDescription" />
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/primaryTextColor"
+                android:text="@string/ProductName"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/upproductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_normal"
+                android:importantForAutofill="no"
+                android:textColor="@color/primaryTextColor"
+                android:inputType="textMultiLine"
+                android:minHeight="50dp"
+                android:paddingHorizontal="10dp"
+                tools:ignore="LabelFor" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Price"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/upproductPrice"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primaryTextColor"
+                        android:background="@drawable/rounded_edittext_normal"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:minHeight="50dp"
+                        android:paddingHorizontal="10dp"
+                        tools:ignore="LabelFor" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Category"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/upproductType"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext_normal"
+                        android:gravity="center"
+                        android:textColor="@color/primaryTextColor"
+                        android:hint="@string/Selectone"
+                        android:importantForAutofill="no"
+                        android:minWidth="110dp"
+                        android:minHeight="50dp"
+                        android:paddingHorizontal="20dp"
+                        android:textSize="18sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/primaryTextColor"
+                android:text="@string/Description"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/upproductDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext_normal"
+                android:importantForAutofill="no"
+                android:textColor="@color/primaryTextColor"
+                android:inputType="textMultiLine"
+                android:minHeight="50dp"
+                android:paddingHorizontal="10dp"
+                tools:ignore="LabelFor" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageCard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="2dp">
+
+                <ImageButton
+                    android:id="@+id/upproductImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#00FFFFFF"
+                    android:clickable="false"
+                    android:src="@drawable/ic_gallery"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+            <ProgressBar
+                android:id="@+id/bar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="-10dp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/upfinishbtn"
+                android:layout_width="141dp"
+                android:layout_height="57dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/updateSP"
+                android:background="@drawable/light_green_gradient"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorButtonWhite" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+</ScrollView>

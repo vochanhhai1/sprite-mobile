@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:scrollbars="none"
+    tools:context=".Activity.Register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_login_background"
+            tools:ignore="ContentDescription" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="140dp"
+                android:src="@drawable/khoa"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/viga"
+                android:text="@string/app_name"
+                android:textColor="#15BE77"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/DeliverFavoriteFood"
+                android:textAlignment="center"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:text="@string/SignupforFREE"
+                android:textAlignment="center"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <!--SignUp FORM-->
+            <EditText
+                android:id="@+id/register_user"
+                android:layout_width="325dp"
+                android:layout_height="57dp"
+                android:textColorHint="@color/primaryTextColor"
+                android:textColor="@color/primaryTextColor"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_edittext_normal"
+                android:drawableStart="@drawable/ic_person_black_login_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/textColorButtonGreen"
+                android:hint="@string/h_v_t_n"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingHorizontal="10dp" />
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="325dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="30dp"
+                android:textColorHint="@color/primaryTextColor"
+                android:textColor="@color/primaryTextColor"
+                android:background="@drawable/rounded_edittext_normal"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:hint="@string/StudentID"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingHorizontal="10dp" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="325dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/primaryTextColor"
+                android:textColor="@color/primaryTextColor"
+                android:background="@drawable/rounded_edittext_normal"
+                android:drawableStart="@drawable/ic_pass"
+                android:drawablePadding="10dp"
+                android:hint="@string/atleast6characters"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:paddingHorizontal="10dp" />
+
+            <EditText
+                android:id="@+id/register_confirm"
+                android:layout_width="325dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/primaryTextColor"
+                android:background="@drawable/rounded_edittext_normal"
+                android:drawableStart="@drawable/ic_pass"
+                android:drawablePadding="10dp"
+                android:textColor="@color/primaryTextColor"
+                android:hint="@string/ConfirmPassword"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:paddingHorizontal="10dp" />
+            <CheckBox
+                android:id="@+id/RoleCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/primaryTextColor"
+                android:textColor="@color/primaryTextColor"
+                android:text="@string/l_nh_n_vi_n" />
+            <ProgressBar
+                android:id="@+id/bar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/register_button"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/light_green_gradient"
+                android:paddingHorizontal="15dp"
+                android:text="@string/CreateAccount"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorButtonWhite" />
+
+            <TextView
+                android:id="@+id/register_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingBottom="50dp"
+                android:text="@string/alreadyhaveanaccount"
+                android:textColor="#15BE77" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+</ScrollView>

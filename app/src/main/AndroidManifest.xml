@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppQLSV"
+        android:usesCleartextTraffic="true"
+        tools:ignore="UnusedAttribute"
+        tools:targetApi="31">
+        <activity
+            android:name=".Admin.Fragment.QuanLyChat.AdminChatScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SuccessSetPassScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SetNewPassScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.VerifiPassScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ForgotPassScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Fragment.QuanLyDonHang.orderdetail.AdminOrderDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUser.Fragment.proflle.profilsetting.BioScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Login"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUser.Fragment.proflle.generasetting.GeneralSetting"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUser.Fragment.proflle.profilsetting.UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUser.Fragment.Home.ReviewDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUser.Fragment.Home.noti.NotificationUser"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUser.Fragment.Home.SearchSceen"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUser.Fragment.Home.FilterScreen"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUser.Fragment.Cart.RateScreen"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUser.Fragment.Cart.OrderDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUser.Fragment.Home.PopularMenu"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUser.Fragment.Home.infoFood"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Fragment.QuanLySanPham.UpdateSanPham"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Fragment.QuanLySanPham.AddSanPham"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Fragment.QuanLyNhanVien.DetailQuanLyNhanVien"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Fragment.QuanLySanPham.QuanLySanPhamFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUser.Fragment.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Register"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.HomeAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUser.Fragment.onboarding.OnboardingScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".ActivityUser.Fragment.Home.FilterScreen">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/backBtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back_button">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_back"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/primaryTextColor"
+                android:text="@string/filter"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--CATEGORY-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/primaryTextColor"
+            android:text="@string/Category"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/radio_button_check"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/ALL"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:width="100dp"
+                    android:background="@drawable/radio_button_check"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/FOOD"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:width="100dp"
+                    android:background="@drawable/radio_button_check"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/DRINK"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--RATING-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/primaryTextColor"
+            android:text="@string/Sortby"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio21"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/radio_button_check"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/Price"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio22"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/radio_button_check"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/Rating"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/radio3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                app:cardBackgroundColor="@color/textColorButtonGreen"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_down" />
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--PRICE RANGE-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/PriceRange"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/priceRange"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:thumbColor="#C3C1C1"
+            app:thumbStrokeColor="#FFBF00"
+            app:thumbStrokeWidth="2dp"
+            app:trackColorActive="#53E88B"
+            app:trackColorInactive="#C3C1C1" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/confirmButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/light_green_gradient"
+            android:text="@string/Confirm"
+            android:textColor="@color/textColorButtonWhite"
+            android:textSize="16sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
